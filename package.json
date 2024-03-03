@@ -1,37 +1,36 @@
 {
-  "name": "vsxcode-themes",
-  "displayName": "VSXCode Themes",
-  "description": "XCode Themes for VSCode - Based on VSCode Modern Themes",
-  "author": {
-    "email": "bahman.world@gmail.com",
-    "name": "Bahman world",
-    "url": "https://github.com/bahmanworld"
-  },
-  "repository": {
-    "url": "https://github.com/bahmanworld/vsxcode-themes"
-  },
-  "publisher": "Bahman",
-  "icon": "./vsxcode-icon.png",
-  "version": "1.2.0",
-  
-  "engines": {
-    "vscode": "^1.86.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "XCode - Light Modern",
-        "uiTheme": "vs",
-        "path": "./themes/xcode-light.json"
-      },
-      {
-        "label": "XCode - Dark Modern",
-        "uiTheme": "vs-dark",
-        "path": "./themes/xcode-dark.json"
-      }
-    ]
-  }
+	"name": "vsxcode-themes",
+	"displayName": "VSXCode Themes",
+	"description": "XCode Themes for VSCode - Based on VSCode Modern Themes",
+	"author": {
+		"email": "bahman.world@gmail.com",
+		"name": "Bahman world",
+		"url": "https://github.com/bahmanworld"
+	},
+	"repository": {
+		"url": "https://github.com/bahmanworld/vsxcode-themes"
+	},
+	"publisher": "Bahman",
+	"icon": "./vsxcode-icon.png",
+	"version": "1.3.0",
+	"engines": {
+		"vscode": "^1.86.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "XCode - Light Modern",
+				"uiTheme": "vs",
+				"path": "./themes/xcode-light.json"
+			},
+			{
+				"label": "XCode - Dark Modern",
+				"uiTheme": "vs-dark",
+				"path": "./themes/xcode-dark.json"
+			}
+		]
+	}
 }
