@@ -13,6 +13,7 @@
   "publisher": "Bahman",
   "icon": "./vsxcode-icon.png",
   "version": "1.2.0",
+  
   "engines": {
     "vscode": "^1.86.0"
   },
