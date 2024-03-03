@@ -11,7 +11,7 @@
     "url": "https://github.com/bahmanworld/vsxcode-themes"
   },
   "publisher": "Bahman",
-  "icon": "./vsxcode-icon.png",
+  "icon": "./images/vsxcode-icon.png",
   "version": "1.4.0",
   "engines": {
     "vscode": "^1.86.0"
