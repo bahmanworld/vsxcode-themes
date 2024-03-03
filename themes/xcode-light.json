@@ -1,6 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "XCode Light",
+    "apc.imports": ["./widget.css"],
 	"colors": {
 		"activityBar.activeBorder": "#6561AC",
 		"activityBar.background": "#F8F8F8",
