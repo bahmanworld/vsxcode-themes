@@ -10,6 +10,8 @@
   "repository": {
     "url": "https://github.com/bahmanworld/vsxcode-themes"
   },
+  "publisher": "Bahman",
+  "icon": "./vsxcode-icon.png",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
