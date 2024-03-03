@@ -1,7 +1,7 @@
 {
   "name": "vsxcode-themes",
-  "displayName": "VSXCode Themes",
-  "description": "XCode Themes for VSCode - Based on VSCode Modern Themes",
+  "displayName": "VSXCode Themes + Glassy Suggest-Widget",
+  "description": "XCode Themes for VSCode + Glassy Suggest-Widget",
   "author": {
     "email": "bahman.world@gmail.com",
     "name": "Bahman world",
