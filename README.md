@@ -15,14 +15,13 @@
 <br/>
 <br/>
 
-
 # Extra Widgets
 ### 🍷 Glassy Suggest-Widget
 
 ![image](./images/glassy-suggest-widget.png)
 
 **How to Install:**
-1. Install [Apc Customize UI++](vscode:extension/drcika.apc-extension) extention 
+1. Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extention 
 
 2. Enable Apc Extension via Command Palette
 
