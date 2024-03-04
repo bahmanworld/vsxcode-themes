@@ -1,5 +1,11 @@
 # Change Log
 
+### v2.0.0
+
+- Added: Enable/Disable Glassy Suggest Widget Commands
+- Fixed: Some Bugs
+- Updated: Some Improvments
+
 ### v1.5.0
 
 - Added: Glassy Suggest-Widget
