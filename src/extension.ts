@@ -7,7 +7,7 @@ let stylePath = path.join(rootPath, "themes/widget.css");
 
 export function activate(context: vscode.ExtensionContext) {
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.enable-glassy-sugesst-widget",
+    "bahman.enable-glassy-suggest-widget",
     () => {
       let configs = vscode.workspace.getConfiguration();
       let imports = configs.get("apc.imports") as string[];
@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.disable-glassy-sugesst-widget",
+    "bahman.disable-glassy-suggest-widget",
     () => {
       let configs = vscode.workspace.getConfiguration();
       let imports = configs.get("apc.imports") as string[];

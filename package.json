@@ -6,7 +6,8 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "git": "git add . && git commit -m \"some changes\" && git push"
   },
   "author": {
     "email": "bahman.world@gmail.com",
@@ -46,13 +47,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "bahman.enable-glassy-sugesst-widget",
-        "title": "Enable Glassy Sugesst Widget",
+        "command": "bahman.enable-glassy-suggest-widget",
+        "title": "Enable Glassy Suggest Widget",
         "category": "VSXCode"
       },
       {
-        "command": "bahman.disable-glassy-sugesst-widget",
-        "title": "Disable Glassy Sugesst Widget",
+        "command": "bahman.disable-glassy-suggest-widget",
+        "title": "Disable Glassy Suggest Widget",
         "category": "VSXCode"
       }
     ],
