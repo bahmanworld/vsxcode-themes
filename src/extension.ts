@@ -3,13 +3,13 @@ import path from "path";
 
 let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
 let extensionPath = extension?.extensionPath.toString() || "";
-let stylePath = path.join(extensionPath, "themes/vsxcode-widget.css");
+let stylePath = path.join(extensionPath, "dist/widget.min.css");
 
 type Action = "enable" | "disable";
 
 const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {
   let eid = extension?.id || "vsxcode";
-  let key = "vsxcode-widget.css";
+  let key = "widget.min.css";
   let configs = vscode.workspace.getConfiguration();
   let imports = configs.get("apc.imports") as string[];
   imports = imports

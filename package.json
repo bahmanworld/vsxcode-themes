@@ -1,15 +1,18 @@
 {
   "name": "vsxcode-themes",
   "displayName": "VSXCode Themes + Glassy Suggest-Widget",
+  "version": "2.1.1",
   "description": "XCode Themes for VSCode + Glassy Suggest-Widget",
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
+  "icon": "./images/vsxcode-icon.png",
+  "publisher": "Bahman",
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "minify": "cleancss -o ./dist/widget.min.css ./src/widget.css  --input-source-map",
+    "compile": "npm run minify && tsc -p ./",
+    "watch": "npm run minify && tsc -watch -p ./",
     "git": "git add . && git commit -m \"some changes\" && git push"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
@@ -18,8 +21,10 @@
     "@typescript-eslint/parser": "^7.0.2",
     "@vscode/test-cli": "^0.0.6",
     "@vscode/test-electron": "^2.3.9",
+    "clean-css-cli": "^5.6.3",
     "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "uglify-js": "^3.17.4"
   },
   "author": {
     "email": "bahman.world@gmail.com",
@@ -29,9 +34,6 @@
   "repository": {
     "url": "https://github.com/bahmanworld/vsxcode-themes"
   },
-  "publisher": "Bahman",
-  "icon": "./images/vsxcode-icon.png",
-  "version": "2.1.0",
   "engines": {
     "vscode": "^1.87.0"
   },
