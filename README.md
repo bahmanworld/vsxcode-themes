@@ -27,10 +27,8 @@
  
 3 . Use following commands:
 
- - **Enable Widget**
-<br/>
+ - **Enable Widget**:
 <kbd>F1</kbd> → VSXCode: Enable Glassy Suggest Widget
 
-- **Disable Widget**
-<br/>
+- **Disable Widget**:
 <kbd>F1</kbd> → VSXCode: Disable Glassy Suggest Widget
