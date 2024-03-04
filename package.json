@@ -2,6 +2,12 @@
   "name": "vsxcode-themes",
   "displayName": "VSXCode Themes + Glassy Suggest-Widget",
   "description": "XCode Themes for VSCode + Glassy Suggest-Widget",
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
   "author": {
     "email": "bahman.world@gmail.com",
     "name": "Bahman world",
@@ -17,10 +23,15 @@
     "vscode": "^1.86.0"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
   ],
   "extensionKind": [
-    "ui"
+    "ui",
+    "workspace"
+  ],
+  "extensionDependencies": [
+    "drcika.apc-extension"
   ],
   "keywords": [
     "macos",
@@ -31,7 +42,20 @@
     "modern",
     "vsxcode"
   ],
+  "activationEvents": [],
   "contributes": {
+    "commands": [
+      {
+        "command": "bahman.enable-glassy-sugesst-widget",
+        "title": "Enable Glassy Sugesst Widget",
+        "category": "VSXCode"
+      },
+      {
+        "command": "bahman.disable-glassy-sugesst-widget",
+        "title": "Disable Glassy Sugesst Widget",
+        "category": "VSXCode"
+      }
+    ],
     "themes": [
       {
         "label": "XCode - Light Modern",
@@ -44,5 +68,16 @@
         "path": "./themes/xcode-dark.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
   }
 }
