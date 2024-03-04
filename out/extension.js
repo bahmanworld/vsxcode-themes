@@ -33,14 +33,14 @@ let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
 let rootPath = extension?.extensionPath.toString() || '/';
 let stylePath = path_1.default.join(rootPath, "themes/widget.css");
 function activate(context) {
-    let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.enable-glassy-sugesst-widget", () => {
+    let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.enable-glassy-suggest-widget", () => {
         let configs = vscode.workspace.getConfiguration();
         let imports = configs.get("apc.imports");
         if (!imports.includes(stylePath)) {
             configs.update("apc.imports", [...imports, stylePath], vscode.ConfigurationTarget.Global);
         }
     });
-    let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.disable-glassy-sugesst-widget", () => {
+    let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.disable-glassy-suggest-widget", () => {
         let configs = vscode.workspace.getConfiguration();
         let imports = configs.get("apc.imports");
         if (imports.includes(stylePath)) {
