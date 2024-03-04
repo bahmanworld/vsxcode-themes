@@ -9,6 +9,18 @@
     "watch": "tsc -watch -p ./",
     "git": "git add . && git commit -m \"some changes\" && git push"
   },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
   "author": {
     "email": "bahman.world@gmail.com",
     "name": "Bahman world",
@@ -19,7 +31,7 @@
   },
   "publisher": "Bahman",
   "icon": "./images/vsxcode-icon.png",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -52,6 +64,11 @@
         "category": "VSXCode"
       },
       {
+        "command": "bahman.reload-glassy-suggest-widget",
+        "title": "Reload Glassy Suggest Widget",
+        "category": "VSXCode"
+      },
+      {
         "command": "bahman.disable-glassy-suggest-widget",
         "title": "Disable Glassy Suggest Widget",
         "category": "VSXCode"
@@ -69,16 +86,5 @@
         "path": "./themes/xcode-dark.json"
       }
     ]
-  },
-  "devDependencies": {
-    "@types/mocha": "^10.0.6",
-    "@types/node": "18.x",
-    "@types/vscode": "^1.87.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "@vscode/test-cli": "^0.0.6",
-    "@vscode/test-electron": "^2.3.9",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
   }
 }

@@ -1,59 +1,42 @@
-import path from "path";
-import os from "os";
-import fs from "fs";
 import * as vscode from "vscode";
+import path from "path";
 
 let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
-let extensionPath = extension?.extensionPath.toString() || '';
+let extensionPath = extension?.extensionPath.toString() || "";
 let stylePath = path.join(extensionPath, "themes/vsxcode-widget.css");
-let widgetPath = path.join(os.homedir(), ".vsxcode");
-if (!fs.existsSync(widgetPath)) {
-  fs.mkdirSync(widgetPath, { recursive: true });
-}
-fs.copyFileSync(stylePath, path.join(widgetPath, "vsxcode-widget.css"));
+
+type Action = "enable" | "disable";
+
+const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {
+  let eid = extension?.id || "vsxcode";
+  let key = "vsxcode-widget.css";
+  let configs = vscode.workspace.getConfiguration();
+  let imports = configs.get("apc.imports") as string[];
+  imports = imports
+    .filter((item) => !item.includes(eid))
+    .filter((item) => !item.includes(key));
+  action === "enable" && imports.push(stylePath);
+  configs.update("apc.imports", imports, vscode.ConfigurationTarget.Global);
+};
 
 export function activate(context: vscode.ExtensionContext) {
-
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
     "bahman.enable-glassy-suggest-widget",
-    () => {
-      let configs = vscode.workspace.getConfiguration();
-      let imports = configs.get("apc.imports") as string[];
-      if (!imports.includes(stylePath)) {
-        configs.update(
-          "apc.imports",
-          [...imports, stylePath],
-          vscode.ConfigurationTarget.Global
-        );
-      }
-    }
+    () => toggleGlassySuggestWidgetCallback("enable")
+  );
+
+  let reloadGlassySuggestWidgetCommand = vscode.commands.registerCommand(
+    "bahman.reload-glassy-suggest-widget",
+    () => toggleGlassySuggestWidgetCallback("enable")
   );
 
   let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
     "bahman.disable-glassy-suggest-widget",
-    () => {
-      let configs = vscode.workspace.getConfiguration();
-      let imports = configs.get("apc.imports") as string[];
-      configs.update(
-        "apc.imports",
-        [...imports.filter((item) => !item.includes(stylePath))],
-        vscode.ConfigurationTarget.Global
-      );
-      // let eid = extension?.id || "vsxcode";
-      // let key = "vsxcode-widget.css";
-      // configs.update(
-      //   "apc.imports",
-      //   [
-      //     ...imports
-      //       .filter((item) => !item.includes(eid))
-      //       .filter((item) => !item.includes(key)),
-      //   ],
-      //   vscode.ConfigurationTarget.Global
-      // );
-    }
+    () => toggleGlassySuggestWidgetCallback("disable")
   );
 
   context.subscriptions.push(enableGlassySuggestWidgetCommand);
+  context.subscriptions.push(reloadGlassySuggestWidgetCommand);
   context.subscriptions.push(disableGlassySuggestWidgetCommand);
 }
 
