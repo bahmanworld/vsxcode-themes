@@ -26,14 +26,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.disabled = exports.enabled = exports.deactivate = exports.activate = void 0;
+exports.deactivate = exports.activate = void 0;
 const path_1 = __importDefault(require("path"));
 const vscode = __importStar(require("vscode"));
 let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
 let rootPath = extension?.extensionPath.toString() || '/';
 let stylePath = path_1.default.join(rootPath, "themes/widget.css");
 function activate(context) {
-    console.log('bahman-vsxcode-activated');
     let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.enable-glassy-suggest-widget", () => {
         let configs = vscode.workspace.getConfiguration();
         let imports = configs.get("apc.imports");
@@ -53,16 +52,7 @@ function activate(context) {
 }
 exports.activate = activate;
 function deactivate() {
-    console.log('bahman-vsxcode-deactivated');
     vscode.commands.executeCommand("bahman.disable-glassy-sugesst-widget");
 }
 exports.deactivate = deactivate;
-function enabled() {
-    console.log('bahman-vsxcode-enabled');
-}
-exports.enabled = enabled;
-function disabled() {
-    console.log('bahman-vsxcode-disabled');
-}
-exports.disabled = disabled;
 //# sourceMappingURL=extension.js.map
