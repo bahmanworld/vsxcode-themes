@@ -25,10 +25,13 @@
 
 2 . <kbd>F1</kbd> → Apc: Enable Apc Extension
  
-<h3 style="margin: 5px 0; color: #2dde98;">Enable Widget</h3>
+
+**Enable Widget**
+<br/>
 <kbd>F1</kbd> → VSXCode: Enable Glassy Suggest Widget
 
 <br/>
 
-<h3 style="margin: 5px 0; color: #ff6c5f;">Disable Widget</h3>
+**Disable Widget**
+<br/>
 <kbd>F1</kbd> → VSXCode: Disable Glassy Suggest Widget
