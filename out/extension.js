@@ -28,10 +28,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
 const path_1 = __importDefault(require("path"));
+const os_1 = __importDefault(require("os"));
+const fs_1 = __importDefault(require("fs"));
 const vscode = __importStar(require("vscode"));
 let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
-let rootPath = extension?.extensionPath.toString() || "/";
-let stylePath = path_1.default.join(rootPath, "themes/vsxcode-widget.css");
+let extensionPath = extension?.extensionPath.toString() || '';
+let stylePath = path_1.default.join(extensionPath, "themes/vsxcode-widget.css");
+let widgetPath = path_1.default.join(os_1.default.homedir(), ".vsxcode");
+if (!fs_1.default.existsSync(widgetPath)) {
+    fs_1.default.mkdirSync(widgetPath, { recursive: true });
+}
+fs_1.default.copyFileSync(stylePath, path_1.default.join(widgetPath, "vsxcode-widget.css"));
 function activate(context) {
     let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.enable-glassy-suggest-widget", () => {
         let configs = vscode.workspace.getConfiguration();
@@ -43,13 +50,18 @@ function activate(context) {
     let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.disable-glassy-suggest-widget", () => {
         let configs = vscode.workspace.getConfiguration();
         let imports = configs.get("apc.imports");
-        let eid = extension?.id || "vsxcode";
-        let key = "vsxcode-widget.css";
-        configs.update("apc.imports", [
-            ...imports
-                .filter((item) => !item.includes(eid))
-                .filter((item) => !item.includes(key)),
-        ], vscode.ConfigurationTarget.Global);
+        configs.update("apc.imports", [...imports.filter((item) => !item.includes(stylePath))], vscode.ConfigurationTarget.Global);
+        // let eid = extension?.id || "vsxcode";
+        // let key = "vsxcode-widget.css";
+        // configs.update(
+        //   "apc.imports",
+        //   [
+        //     ...imports
+        //       .filter((item) => !item.includes(eid))
+        //       .filter((item) => !item.includes(key)),
+        //   ],
+        //   vscode.ConfigurationTarget.Global
+        // );
     });
     context.subscriptions.push(enableGlassySuggestWidgetCommand);
     context.subscriptions.push(disableGlassySuggestWidgetCommand);
