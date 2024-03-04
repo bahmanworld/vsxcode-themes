@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.1.4
+
+- Updated: Themes Names
+
 ### v2.1.3
 
 - Some Improvments
