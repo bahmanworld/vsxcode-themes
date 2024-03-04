@@ -1,17 +1,17 @@
 # Content Table
 
-- [Screenshots](#🎆-screenshots)
-- [Extra Widgets](#🥳-extra-widgets)
+- [Screenshots](#screenshots)
+- [Extra Widgets](#extra-widgets)
 
 
 
 ###
-# 🎆 Screenshots
+# Screenshots
 
 ![image](./images/screenshot-dark.png) 
 ![image](./images/screenshot-light.png)
 
-# 🥳 Extra Widgets
+# Extra Widgets
 ### 🍷 Glassy Suggest-Widget
 
 ![image](./images/glassy-suggest-widget.png)
