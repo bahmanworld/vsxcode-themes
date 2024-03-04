@@ -1,7 +1,7 @@
 {
   "name": "vsxcode-themes",
   "displayName": "VSXCode Themes + Glassy Suggest-Widget",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "XCode Themes for VSCode + Glassy Suggest-Widget",
   "main": "./dist/extension.js",
   "icon": "./images/vsxcode-icon.png",
