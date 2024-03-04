@@ -6,7 +6,6 @@ let rootPath = extension?.extensionPath.toString() || '/';
 let stylePath = path.join(rootPath, "themes/widget.css");
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('bahman-vsxcode-activated')
 
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
     "bahman.enable-glassy-suggest-widget",
@@ -43,14 +42,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-  console.log('bahman-vsxcode-deactivated')
   vscode.commands.executeCommand("bahman.disable-glassy-sugesst-widget");
-}
-
-export function enabled() {
-  console.log('bahman-vsxcode-enabled')
-}
-
-export function disabled() {
-  console.log('bahman-vsxcode-disabled')
 }
