@@ -1,8 +1,167 @@
+.bahman .clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.bahman .clearfix {
+  display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.bahman .clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+.bahman .fl {
+  float: left;
+}
+
+.bahman .fr {
+  float: right;
+}
+
+.bahman h1 {
+  font-weight: 400;
+  line-height: 1.1em;
+  border-bottom: 1px dashed #0077BB;
+  position: relative;
+  padding: 14px 25px 5px 0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  margin: 0.2em 0px 20px -2px;
+  color: rgb(0, 170, 238);
+  text-decoration: none;
+}
+
+.bahman h2 {
+  font-size: 16px;
+  color: #111;
+  padding: 5px 20px !important;
+  clear: both;
+  background: #eee;
+  font-weight: 700;
+}
+
+.bahman h3 {
+  margin: 0 0 10px 0;
+  color: #111;
+}
+
+.bahman blockquote {
+  background: #eee;
+  padding: 15px;
+  margin: 30px auto;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  font-style: italic;
+  color: #000;
+  position: relative;
+
+}
+
+.bahman blockquote p {
+  margin: 0;
+  padding: 0;
+}
+
+.bahman img {
+  border: none;
+}
+
+.bahman ul.left {}
+
+.bahman ul.right {
+  text-align: right;
+}
+
+.bahman a:link,
+a:visited {
+  text-decoration: none;
+  color: #0077BB;
+}
+
+.bahman a:hover,
+a:active {
+  color: #0099cc;
+  text-decoration: underline;
+}
+
+.bahman button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.bahman form,
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.bahman .header {
+  background-color: #fff;
+  height: 10%;
+}
+
+.bahman .header-wrapper {
+  width: 998px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.bahman .logo {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.bahman .search {
+  margin-top: 10px;
+}
+
+.bahman .nav {
+  height: 10%;
+  background-color: #00AEEC;
+}
+
+.bahman .nav-wrapper {
+
+  margin: 0 auto;
+  width: 998px;
+}
+
+.bahman .nav ul,
+.header ul,
+.sidebar ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.bahman nav ul li,
+.bahman .header ul li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+.bahman .nav ul li {
+  padding: 0 20px;
+}
+
 /* start-vsxcode-glassy-suggest-widget-style */
 :root {
   --border-radius: 11px;
   --container-padding: 4px;
 }
+
 /* Suggest Widget */
 .editor-widget.suggest-widget {
   background-color: #eee4;
@@ -13,34 +172,41 @@
   border: 1px solid #0005 !important;
   backdrop-filter: blur(10px) sepia(5%);
 }
+
 /* Suggest Widget - Dark Mode */
 .vs-dark .editor-widget.suggest-widget {
   background-color: #0003;
   box-shadow: inset 0 0 0 1px #fff3, 1px 1px 10px #0008 !important;
   border: 1px solid #0009;
 }
+
 /* Suggest Widget Resize Right Vertical Bar */
 .editor-widget.suggest-widget .monaco-sash.vertical {
   margin-left: calc(var(--container-padding) * 2) !important;
 
 }
+
 .editor-widget.suggest-widget .monaco-sash.vertical::before {
   border-radius: 10px !important;
 }
+
 /* Suggest Widget Resize Bottom Horizontal Bar */
 .editor-widget.suggest-widget .monaco-sash.orthogonal-edge-south.horizontal {
   margin-top: calc(var(--container-padding) * 2) !important;
 }
+
 .editor-widget.suggest-widget .monaco-sash.orthogonal-edge-north.horizontal::before,
 .editor-widget.suggest-widget .monaco-sash.orthogonal-edge-south.horizontal::before {
   border-radius: 10px !important;
 }
+
 /* Suggest Widget List Item */
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row {
   padding: 0 2px !important;
   height: auto !important;
   border-radius: calc(var(--border-radius) - var(--container-padding)) !important;
 }
+
 /* Suggest Widget List Item Focused */
 /* Suggest Widget List Item Hovered */
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row.focused,
@@ -49,6 +215,7 @@
   text-shadow: 1px 1px 1px #fff;
   box-shadow: inset 0 0 0 1px #0006, inset 0 0 0 2px #fff !important;
 }
+
 /* Suggest Widget List Item Focused - Dark Mode */
 /* Suggest Widget List Item Hovered - Dark Mode */
 .vs-dark .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row.focused,
@@ -57,14 +224,17 @@
   text-shadow: 1px 1px 1px #000;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #fff2 !important;
 }
+
 /* Suggest Widget List Item Custom Color Icon */
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row .colorspan {
   margin-left: 2px !important;
 }
+
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row .readMore {
   padding-top: 3px !important;
 
 }
+
 /* Suggest Widget List Item Color Span */
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row .colorspan {
   border-radius: 100px !important;
@@ -73,26 +243,31 @@
   height: 13px !important;
   margin-top: 4px !important;
 }
+
 /* Suggest Widget Scrollbar */
 .editor-widget.suggest-widget .monaco-scrollable-element .scrollbar {
   border-radius: var(--border-radius) !important;
 }
+
 /* Suggest Widget Scrollbar Thumb */
 .editor-widget.suggest-widget .monaco-scrollable-element .scrollbar .slider {
   border-radius: calc(var(--border-radius)) !important;
   background-color: #eee !important;
   box-shadow: inset 0 0 0 2px #fff7, inset 0 0 0 1px #0006 !important;
 }
+
 /* Suggest Widget Scrollbar Thumb - Dark Mode */
 .vs-dark .editor-widget.suggest-widget .monaco-scrollable-element .scrollbar .slider {
   background-color: #0006 !important;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #fff2 !important;
 }
+
 /* Suggest Widget Details Container */
 .suggest-details-container {
   margin: 0 2px !important;
   color: #0006;
 }
+
 /* Suggest Widget Details Inner Panel */
 .suggest-details-container .suggest-details {
   background-color: #eef9 !important;
@@ -105,6 +280,7 @@
   box-shadow: inset 0 0 0 2px #fff7, inset 0 0 0 1px #0006 !important;
   backdrop-filter: blur(10px) sepia(10%);
 }
+
 /* Suggest Widget Details Inner - Dark Mode */
 .vs-dark .suggest-details-container .suggest-details {
   background-color: #0006 !important;
@@ -112,34 +288,218 @@
   text-shadow: 1px 1px #000;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #fff3 !important;
 }
+
 /* Suggest Widget Details Scrollbar Thumb */
 .suggest-details-container .monaco-scrollable-element .scrollbar .slider {
   border-radius: calc(var(--border-radius)) !important;
   background-color: #eee !important;
   box-shadow: inset 0 0 0 2px #fff7, inset 0 0 0 1px #0006 !important;
 }
+
 /* Suggest Widget Details Scrollbar Thumb - Dark Mode */
 .vs-dark .suggest-details-container .monaco-scrollable-element .scrollbar .slider {
   background-color: #0006 !important;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #fff2 !important;
 }
+
 /* Paramater Hints Widget */
 .editor-widget.parameter-hints-widget {
   background-color: #eee4 !important;
   border-radius: var(--border-radius) !important;
   box-shadow: inset 0 0 0 1px #fff, 2px 2px 10px #0002 !important;
   border: 1px solid #0006;
-  backdrop-filter: blur(10px) sepia(10%) !important;  
+  backdrop-filter: blur(10px) sepia(10%) !important;
 }
+
 /* Paramater Hints Widget - Dark Mode */
 .vs-dark .editor-widget.parameter-hints-widget {
   background-color: #0002 !important;
   box-shadow: inset 0 0 0 1px #fff4, 1px 1px 10px #0008 !important;
   border: 1px solid #0009;
 }
+
 /* Paramater Hints Widget Inner Wrapper */
 .editor-widget.parameter-hints-widget .phwrapper {
   padding: var(--container-padding) !important;
   box-sizing: border-box !important;
 }
+
 /* end-vsxcode-glassy-suggest-widget-style */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 375px;
+  height: 812px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  margin: 48px 0;
+}
+
+/* 背景 */
+.main-panel {
+  background: #0061c4;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 导航 */
+.bahman nav {
+  padding: 48px 24px 30px 24px;
+}
+
+.bahman .buttons {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.bahman .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bahman .menu li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 18px;
+  margin-top: 48px;
+}
+
+.bahman .menu .active {
+  color: white;
+}
+
+.bahman .middle-panel {
+  background: #f2f8fc;
+  border-radius: 34px;
+  padding: 30px 24px 100px 24px;
+  margin-bottom: -80px;
+}
+
+.bahman .favorite-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bahman .favorite-menu span {
+  font-size: 16px;
+  color: #6f6f6f;
+}
+
+.bahman .favorite-menu i.fas {
+  color: #6f6f6f;
+}
+
+.bahman .people {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  flex-shrink: 0;
+  margin-right: -20px;
+}
+
+.bahman .profile {
+  text-align: center;
+  padding: 20px 10px 0 20px;
+}
+
+.bahman .profile:first-child {
+  padding-left: 0;
+}
+
+.bahman .profile:last-child {
+  padding-right: 0;
+}
+
+.bahman .profile img,
+.bahman .message img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bahman .profile .profile-name {
+  font-size: 14px;
+  color: #a5a9ad;
+  margin-top: 6px;
+}
+
+.bahman message-panel {
+  background: white;
+  position: relative;
+  border-radius: 48px 48px 0 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.bahman .mask {
+  width: 100%;
+  height: 64px;
+  border-radius: 48px 48px 0 0;
+  background-image: linear-gradient(180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.6) 60%,
+      rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+}
+
+.bahman .messages {
+  overflow: auto;
+  padding-right: 12px;
+  padding-bottom: 24px;
+}
+
+.bahman .message {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 24px;
+}
+
+.bahman .message .info {
+  flex: 4;
+  padding-left: 20px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.bahman message .info .name {
+  color: #a5a9ad;
+  padding-bottom: 8px;
+}
+
+.bahman .message .info .content {
+  color: #657081;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bahman .message .time {
+  flex: 1;
+  font-size: 14px;
+  color: #858a98;
+  padding-top: 4px;
+  align-self: flex-start;
+  text-align: right;
+}
+
+.bahman .message.new {
+  background: rgba(27, 131, 246, 0.05);
+  border-radius: 0 24px 24px 0;
+}
+
+.bahman .message .new-message-icon {
+  background: rgba(239, 102, 102, 1);
+  border-radius: 7px;
+  font-size: 12px;
+  color: white;
+  padding: 3px 6px;
+  margin-top: 6px;
+}
