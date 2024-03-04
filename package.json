@@ -18,7 +18,7 @@
   },
   "publisher": "Bahman",
   "icon": "./images/vsxcode-icon.png",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "engines": {
     "vscode": "^1.87.0"
   },
