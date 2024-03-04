@@ -1,18 +1,11 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+import path from "path";
 import * as vscode from "vscode";
-import fs from "fs";
-import os from "os";
 
-let extensionPath = vscode.extensions
-  .getExtension("Bahman.vsxcode-themes")
-  ?.extensionPath.toString();
-let stylePath = extensionPath + "/themes/widget.css";
+let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
+let rootPath = extension?.extensionPath.toString() || '/';
+let stylePath = path.join(rootPath, "themes/widget.css");
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
     "bahman.enable-glassy-sugesst-widget",
     () => {
@@ -49,5 +42,5 @@ export function activate(context: vscode.ExtensionContext) {
 
 // This method is called when your extension is deactivated
 export function deactivate() {
-  vscode.commands.executeCommand("bahman.disable-glassy-sugesst-widget")
+  vscode.commands.executeCommand("bahman.disable-glassy-sugesst-widget");
 }

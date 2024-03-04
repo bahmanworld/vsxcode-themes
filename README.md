@@ -21,16 +21,15 @@
 ![image](./images/glassy-suggest-widget.png)
 
 **How to Install:**
-1. Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extention 
 
-2. Enable Apc Extension via Command Palette
+1. Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extension 
 
-3. Download → [`widget.css`](https://raw.githubusercontent.com/bahmanworld/vsxcode-themes/main/widget.css)
+2. <kbd>F1</kbd> → Apc: Enable Apc Extension
+ 
+3. `Enable widget`
+<br/>
+<kbd>F1</kbd> → VSXCode: Enable Glassy Sugesst Widget 
 
-4. Go to `settings.json`
-
-5. Add following configuration:
-
-```json
-"apc.imports": [ "path_to_`widget.css`" ]
-```
+4. `Disable widget`
+<br/>
+<kbd>F1</kbd> → VSXCode: Disable Glassy Sugesst Widget

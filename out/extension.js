@@ -22,17 +22,16 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+const path_1 = __importDefault(require("path"));
 const vscode = __importStar(require("vscode"));
-let extensionPath = vscode.extensions
-    .getExtension("Bahman.vsxcode-themes")
-    ?.extensionPath.toString();
-let stylePath = extensionPath + "/themes/widget.css";
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
+let rootPath = extension?.extensionPath.toString() || '/';
+let stylePath = path_1.default.join(rootPath, "themes/widget.css");
 function activate(context) {
     let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand("bahman.enable-glassy-sugesst-widget", () => {
         let configs = vscode.workspace.getConfiguration();
