@@ -1,11 +1,11 @@
 # Content Table
 
 - [Screenshots](#screenshots)
-- [Extra Widgets](#extra-widgets)
+- [Enable Glassy Suggest-Widget](#enable-glassy-suggest-widget)
 
 <br/>
 
-# Screenshots
+## Screenshots
 ### 🎆 Dark Theme
 ![image](./images/screenshot-dark.png) 
 
@@ -13,23 +13,22 @@
 ![image](./images/screenshot-light.png)
 
 <br/>
-<br/>
 
-# Extra Widgets
-### 🍷 Glassy Suggest-Widget
+## Enable Glassy Suggest-Widget
+### 🍷 Screenshot
 
 ![image](./images/glassy-suggest-widget.png)
 
 **How to Install:**
 
-1. Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extension 
+1 . Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extension 
 
-2. <kbd>F1</kbd> → Apc: Enable Apc Extension
+2 . <kbd>F1</kbd> → Apc: Enable Apc Extension
  
-3. `Enable widget`
-<br/>
-<kbd>F1</kbd> → VSXCode: Enable Glassy Sugesst Widget 
+> <h3 style="margin: 5px 0; color: #2dde98;">Enable Widget</h3>
+> <kbd>F1</kbd> → VSXCode: Enable Glassy Sugesst Widget
 
-4. `Disable widget`
-<br/>
-<kbd>F1</kbd> → VSXCode: Disable Glassy Sugesst Widget
+----
+
+> <h3 style="margin: 5px 0; color: #ff6c5f;">Disable Widget</h3>
+> <kbd>F1</kbd> → VSXCode: Disable Glassy Sugesst Widget
