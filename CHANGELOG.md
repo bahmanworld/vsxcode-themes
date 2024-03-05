@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.1.9
+
+- Fixed: Some Improvments
+
 ### v2.1.8
 
 - Updated: Glassy Widgets Improvments

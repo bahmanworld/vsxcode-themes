@@ -1,7 +1,7 @@
 # Content Table
 
 - [Screenshots](#screenshots)
-- [Enable Glassy Suggest-Widget](#enable-glassy-suggest-widget)
+- [Enable Glassy Widgets](#enable-glassy-widgets)
 
 <br/>
 
@@ -14,21 +14,21 @@
 
 <br/>
 
-## Enable Glassy Suggest-Widget
+## Enable Glassy Widgets
 ### 🍷 Screenshot
 
-![image](./images/glassy-suggest-widget.png)
+![image](./images/glassy-widgets.png)
 
 **How to Install:**
 
 1 . Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extension 
 
-2 . <kbd>F1</kbd> → Apc: Enable Apc Extension
+2 . <kbd>F1</kbd> → Enable Apc Extension
  
 3 . Use following commands:
 
  - **Enable Widget**:
-<kbd>F1</kbd> → VSXCode: Enable Glassy Suggest Widget
+<kbd>F1</kbd> → VSXCode: Enable Glassy Widgets
 
 - **Disable Widget**:
-<kbd>F1</kbd> → VSXCode: Disable Glassy Suggest Widget
+<kbd>F1</kbd> → VSXCode: Disable Glassy Widgets
