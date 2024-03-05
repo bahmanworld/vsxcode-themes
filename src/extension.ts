@@ -3,14 +3,13 @@ import path from "path";
 
 let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
 let extensionPath = extension?.extensionPath.toString() || "";
-let stylePath = path.join(extensionPath, "dist/widget.min.css");
-
+let stylePath = path.join(extensionPath, "dist/widgets.min.css");
 
 type Action = "enable" | "disable";
 
 const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {
   let eid = extension?.id || "vsxcode";
-  let key = "widget.min.css";
+  let key = "widgets.min.css";
   let configs = vscode.workspace.getConfiguration();
   let imports = configs.get("apc.imports") as string[];
   imports = imports
@@ -22,17 +21,17 @@ const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {
 
 export function activate(context: vscode.ExtensionContext) {
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.enable-glassy-suggest-widget",
+    "bahman.enable-glassy-widgets",
     () => toggleGlassySuggestWidgetCallback("enable")
   );
 
   let reloadGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.reload-glassy-suggest-widget",
+    "bahman.reload-glassy-widgets",
     () => toggleGlassySuggestWidgetCallback("enable")
   );
 
   let disableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.disable-glassy-suggest-widget",
+    "bahman.disable-glassy-widgets",
     () => toggleGlassySuggestWidgetCallback("disable")
   );
 
@@ -42,5 +41,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-  vscode.commands.executeCommand("bahman.disable-glassy-suggest-widget");
+  vscode.commands.executeCommand("bahman.disable-glassy-widgets");
 }

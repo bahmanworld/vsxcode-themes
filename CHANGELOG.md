@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.1.6
+
+- Updated: Commands Names
+
 ### v2.1.4
 
 - Updated: Themes Names

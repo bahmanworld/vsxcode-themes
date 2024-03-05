@@ -1,14 +1,14 @@
 {
   "name": "vsxcode-themes",
-  "displayName": "VSXCode Themes + Glassy Suggest-Widget",
-  "version": "2.1.5",
-  "description": "XCode Themes for VSCode + Glassy Suggest-Widget",
+  "displayName": "VSXCode Themes + Glassy Widgets",
+  "version": "2.1.6",
+  "description": "XCode Themes for VSCode + Glassy Widgets",
   "main": "./dist/extension.js",
   "icon": "./images/vsxcode-icon.png",
   "publisher": "Bahman",
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "minify": "cleancss -o ./dist/widget.min.css ./src/widget.css  --input-source-map",
+    "minify": "cleancss -o ./dist/widgets.min.css ./src/widgets.css  --input-source-map",
     "compile": "npm run minify && tsc -p ./",
     "watch": "npm run minify && tsc -watch -p ./",
     "git": "git add . && git commit -m \"some changes\" && git push"
@@ -61,18 +61,18 @@
   "contributes": {
     "commands": [
       {
-        "command": "bahman.enable-glassy-suggest-widget",
-        "title": "Enable Glassy Suggest Widget",
+        "command": "bahman.enable-glassys-widget",
+        "title": "Enable Glassy Widgets",
         "category": "VSXCode"
       },
       {
-        "command": "bahman.reload-glassy-suggest-widget",
-        "title": "Reload Glassy Suggest Widget",
+        "command": "bahman.reload-glassy-widgets",
+        "title": "Reload Glassy Widgets",
         "category": "VSXCode"
       },
       {
-        "command": "bahman.disable-glassy-suggest-widget",
-        "title": "Disable Glassy Suggest Widget",
+        "command": "bahman.disable-glassy-widgets",
+        "title": "Disable Glassy Widgets",
         "category": "VSXCode"
       }
     ],
