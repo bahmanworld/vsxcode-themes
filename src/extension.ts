@@ -5,6 +5,7 @@ let extension = vscode.extensions.getExtension("Bahman.vsxcode-themes");
 let extensionPath = extension?.extensionPath.toString() || "";
 let stylePath = path.join(extensionPath, "dist/widget.min.css");
 
+
 type Action = "enable" | "disable";
 
 const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {

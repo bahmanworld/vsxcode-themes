@@ -190,8 +190,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#AD3DA4",
-                "fontStyle": "bold"
+                "foreground": "#AD3DA4"
             }
         },
         {
@@ -308,8 +307,7 @@
                 "support.constant.font-name"
             ],
             "settings": {
-                "foreground": "#AD3DA4",
-                "fontStyle": "bold"
+                "foreground": "#AD3DA4"
             }
         },
         {
@@ -346,7 +344,7 @@
                 "markup.heading"
             ],
             "settings": {
-                "fontStyle": "bold"
+                
             }
         },
         {
@@ -354,7 +352,7 @@
                 "markup.bold"
             ],
             "settings": {
-                "fontStyle": "bold"
+                
             }
         },
         {
@@ -449,8 +447,7 @@
             "foreground": "#000000"
         },
         "keyword": {
-            "foreground": "#AD3DA4",
-            "bold": true
+            "foreground": "#AD3DA4"
         },
         "type.declaration": {
             "foreground": "#02638C"
@@ -603,10 +600,7 @@
             "foreground": "#3E8087"
         },
         "lifetime": {
-            "foreground": "#3E8087",
-            "bold": false,
-            "italic": false,
-            "underline": false
+            "foreground": "#3E8087"
         },
         "variable.constant.library": {
             "foreground": "#804FB8"
@@ -643,9 +637,6 @@
         },
         "unresolvedReference": {
             "foreground": "#E21615",
-            "bold": false,
-            "italic": false,
-            "underline": false
         },
         "variable": {
             "foreground": "#000000"

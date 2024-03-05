@@ -175,8 +175,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#FF7AB2",
-                "fontStyle": "bold"
+                "foreground": "#FF7AB2"
             }
         },
         {
@@ -293,8 +292,7 @@
                 "support.constant.font-name"
             ],
             "settings": {
-                "foreground": "#FF7AB2",
-                "fontStyle": "bold"
+                "foreground": "#FF7AB2"
             }
         },
         {
@@ -331,7 +329,7 @@
                 "markup.heading"
             ],
             "settings": {
-                "fontStyle": "bold"
+               
             }
         },
         {
@@ -339,7 +337,7 @@
                 "markup.bold"
             ],
             "settings": {
-                "fontStyle": "bold"
+                
             }
         },
         {
@@ -434,8 +432,7 @@
             "foreground": "#FFFFFFD8"
         },
         "keyword": {
-            "foreground": "#FF7AB2",
-            "bold": true
+            "foreground": "#FF7AB2"
         },
         "type.declaration": {
             "foreground": "#6BDFFF"
@@ -588,10 +585,7 @@
             "foreground": "#78C2B3"
         },
         "lifetime": {
-            "foreground": "#78C2B3",
-            "bold": false,
-            "italic": false,
-            "underline": false
+            "foreground": "#78C2B3"
         },
         "variable.constant.library": {
             "foreground": "#B281EB"
@@ -627,10 +621,7 @@
             "foreground": "#ACF2E4"
         },
         "unresolvedReference": {
-            "foreground": "#F32C2C",
-            "bold": false,
-            "italic": false,
-            "underline": false
+            "foreground": "#F32C2C"
         },
         "variable": {
             "foreground": "#FFFFFFD8"
