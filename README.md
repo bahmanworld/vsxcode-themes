@@ -25,7 +25,7 @@
 
 2 . <kbd>F1</kbd> → Enable Apc Extension
  
-3 . Use following commands:
+3 . Then use following commands:
 
  - **Enable Widget**:
 <kbd>F1</kbd> → VSXCode: Enable Glassy Widgets
