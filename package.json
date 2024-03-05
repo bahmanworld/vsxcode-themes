@@ -1,7 +1,7 @@
 {
   "name": "vsxcode-themes",
   "displayName": "VSXCode Themes + Glassy Widgets",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "XCode Themes for VSCode + Glassy Widgets",
   "main": "./dist/extension.js",
   "icon": "./images/vsxcode-icon.png",
@@ -61,7 +61,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "bahman.enable-glassys-widget",
+        "command": "bahman.enable-glassy-widgets",
         "title": "Enable Glassy Widgets",
         "category": "VSXCode"
       },
