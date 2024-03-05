@@ -1,5 +1,10 @@
 # Change Log
 
+### v2.1.8
+
+- Updated: Glassy Widgets Improvments
+- Fixed: Some Bugs
+
 ### v2.1.6
 
 - Updated: Commands Names
