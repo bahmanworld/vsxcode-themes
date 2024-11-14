@@ -11,22 +11,17 @@ const toggleGlassySuggestWidgetCallback = (action: Action = "enable") => {
   let eid = extension?.id || "vsxcode";
   let key = "widgets.min.css";
   let configs = vscode.workspace.getConfiguration();
-  let imports = configs.get("apc.imports") as string[];
+  let imports = configs.get("vscode_custom_css.imports") as string[];
   imports = imports
     .filter((item) => !item.includes(eid))
     .filter((item) => !item.includes(key));
-  action === "enable" && imports.push(stylePath);
-  configs.update("apc.imports", imports, vscode.ConfigurationTarget.Global);
+  action === "enable" && imports.push(`file://${stylePath}`);
+  configs.update("vscode_custom_css.imports", imports, vscode.ConfigurationTarget.Global);
 };
 
 export function activate(context: vscode.ExtensionContext) {
   let enableGlassySuggestWidgetCommand = vscode.commands.registerCommand(
     "bahman.enable-glassy-widgets",
-    () => toggleGlassySuggestWidgetCallback("enable")
-  );
-
-  let reloadGlassySuggestWidgetCommand = vscode.commands.registerCommand(
-    "bahman.reload-glassy-widgets",
     () => toggleGlassySuggestWidgetCallback("enable")
   );
 
@@ -36,7 +31,6 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(enableGlassySuggestWidgetCommand);
-  context.subscriptions.push(reloadGlassySuggestWidgetCommand);
   context.subscriptions.push(disableGlassySuggestWidgetCommand);
 }
 
