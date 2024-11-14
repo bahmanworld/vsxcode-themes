@@ -21,14 +21,17 @@
 
 **How to Install:**
 
-1 . Install [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension) extension 
+1 . Install [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) extension 
 
-2 . <kbd>F1</kbd> → Enable Apc Extension
  
-3 . Then use following commands:
+2 . Then use following commands:
 
  - **Enable Widget**:
 <kbd>F1</kbd> → VSXCode: Enable Glassy Widgets
 
 - **Disable Widget**:
 <kbd>F1</kbd> → VSXCode: Disable Glassy Widgets
+
+3 . <kbd>F1</kbd> → Enable Custom CSS and JS
+
+4 . Restart VSCode

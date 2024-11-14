@@ -1,7 +1,7 @@
 {
   "name": "vsxcode-themes",
   "displayName": "VSXCode Themes + Glassy Widgets",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "XCode Themes for VSCode + Glassy Widgets",
   "main": "./dist/extension.js",
   "icon": "./images/vsxcode-icon.png",
